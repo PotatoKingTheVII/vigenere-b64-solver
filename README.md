@@ -33,6 +33,10 @@ Checking key chunks other than 1 is much the same just with different padding e.
 ## Other base-n systems
 Most other base systems can be bruteforced in a similar way with slight changes. For example, base85 works in chunks of 5 for 4 complete bytes while base32 works in chunks of 4 for 2 complete bytes. I'll gradually be adding these separate versions to this repository.
 
+## entropyB32bruteforce
+Quick and dirty alternative based on entropy instead of logical key restrictions. For each key length it will write a file sorted by its entropy for every key permutation. Much more manual approach and generally only works for longer ciphertexts but a useful alternative.
+
+
 ## Dependencies
 
  - numpy
